@@ -30,12 +30,26 @@ header {
     width: 100%;
     height: 60px;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05) ; 
+    justify-content: space-between;
 }
 
 header section {
     display: flex;
+    padding: auto 0;
     width: 100%;
     height: auto;
+}
+
+.container-left {
+    display: flex;
+    align-items: center;
+    height: auto;
+    padding-left: 20px;
+}
+
+
+.container-center {
+    padding: 0 auto;
 }
 
 .container-nav-left {
@@ -44,7 +58,6 @@ header section {
 }
 
 .container-right {
-    width: 30%;
     height: auto;
     display: flex;
     justify-content: flex-end;
@@ -103,12 +116,12 @@ header li {
     font-weight: bold;
     line-height: 1.8rem;
     color: var(--hospital-green);
+    margin-right: 30px;
 }
 
 .shopping-car {
     display: inline-block;
-    margin-left: 30px;
-    margin-right: 50px;
+    margin-right: 20px;
     width: 30px;
     height: 30px;
     background-image: url("../icons/icon_shopping_cart_notification.svg");
@@ -128,7 +141,7 @@ header li {
     display: grid;
     grid-template-rows: auto 1fr auto;
     width: 340px;
-    text-align: center;
+    height: calc(100% - 60px);
 }
 
 .logo {
@@ -168,7 +181,15 @@ picture {
     display: flex;
     flex-direction: column;
     margin-top: 10px;    
+    height: 100%;
+    justify-content: space-between;
 }
+
+.form div {
+    display: flex;
+    flex-direction: column;
+}
+
 
 .label {
     margin: 0 0 4px;
@@ -176,6 +197,13 @@ picture {
     font-weight: bold;
     line-height: 1.8rem;
     color: var(--black);
+}
+
+.value {
+    font-size: var(--md);
+    font-weight: 500;
+    margin: 10px 0 30px;
+    color: var(--very-light-pink);
 }
 
 .input {
@@ -218,6 +246,7 @@ picture {
 }
 
 .forgot {
+    margin: 0 auto;
     font-size: var(--sm);
     font-weight: bold;
     text-decoration: none;
@@ -225,16 +254,28 @@ picture {
 }
 
 .secondary-button {
-    position: absolute;
-    bottom: -30px;
+    /* position: absolute;
+    bottom: -30px; */
     width: 340px; 
     height: 60px;
     border: 1px solid var(--hospital-green);
     border-radius: 10px;
     cursor: pointer;
+    color: var(--hospital-green);
+    font-size: var(--lg);
+    font-weight: bold;
+    background: var(--white);
 }
 
 .sing-up {
+    font-size: var(--lg);
+    font-weight: bold;
     background: var(--white);
     color: var(--hospital-green);
+
 }
+
+/* .create {
+    position: absolute;
+    bottom: 0px;
+} */
