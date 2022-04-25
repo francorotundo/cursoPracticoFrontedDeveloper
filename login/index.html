@@ -5,16 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Css/style.css">
-    <link rel="stylesheet" href="../Css/desktop.css" media="(min-width: 768px)">
+    <link rel="stylesheet" href="../Css/desktop.css" media="(min-width: 768px">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Yard Sale</title>
     <style>
-        .form-container {
-            margin-top: 25px;
+        body {
+            position: relative;
         }
-
+        .logo {
+            margin-bottom: 55px;
+        }
     </style>
 </head>
 <body>
@@ -40,19 +42,24 @@
         </section>       
     </header>
     <main class="login">
-        <div class="form-container">
+        <section class="form-container">
             <img src="../logos/logo_yard_sale.svg" alt="logo" class="logo">
 
-            <h1 class="title">Email has been sent!</h1>
-            <p class="subtitle">Please check your inbox for instructions on how to reset the password</p>
+            <form action="#" class="form">
+                <label for="" class="label">Email address</label>
+                <input type="email" class="input input-email" placeholder="camiloyokoo@gmail.com">
 
-            <picture><img src="../icons/email.svg" alt="email" class="email"></picture>
+                <label for="" class="label">Password</label>
+                <input type="password" class="input input-password" placeholder="*********">
 
-            <button class="primary-button login-button">Login</button>
+                <input type="submit" value="Login" class="primary-button login-button">
 
-            <p class="resend">Didn´t recive the email? <a href="#">Resend</a></p>
+                <a href="#" class="forgot">Forgot my password</a>
+                
+            </form>
 
-        </div>
+                <button class="secondary-button sing-up">Sing up</button>
+        </section>
     </main>
 </body>
 </html>

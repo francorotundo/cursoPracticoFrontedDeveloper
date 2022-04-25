@@ -128,6 +128,7 @@ header li {
     display: grid;
     grid-template-rows: auto 1fr auto;
     width: 340px;
+    text-align: center;
 }
 
 .logo {
@@ -159,7 +160,7 @@ picture {
     display: grid;
     place-items: center;
     background: var(--text-input-field);
-    border-radius: 100px;
+    border-radius: 50%;
 }
 
 
@@ -214,4 +215,26 @@ picture {
 .resend a {
     color:var(--hospital-green);
     text-decoration: none;
+}
+
+.forgot {
+    font-size: var(--sm);
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--hospital-green);
+}
+
+.secondary-button {
+    position: absolute;
+    bottom: -30px;
+    width: 340px; 
+    height: 60px;
+    border: 1px solid var(--hospital-green);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.sing-up {
+    background: var(--white);
+    color: var(--hospital-green);
 }

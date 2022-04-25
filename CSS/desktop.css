@@ -5,3 +5,8 @@ header  {
 .logo {
     display: none;
 }
+
+.secondary-button {
+    position: static;
+    margin-top: 60px;
+}
