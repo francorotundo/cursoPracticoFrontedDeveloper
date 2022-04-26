@@ -10,3 +10,17 @@ header  {
     position: static;
     margin-top: 60px;
 }
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 240px);
+}
+
+.product-card {
+    width: 240px;
+}
+
+.product {
+    width: 240px;
+    height: 240px;
+}

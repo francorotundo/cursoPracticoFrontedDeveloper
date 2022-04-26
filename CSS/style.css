@@ -275,7 +275,41 @@ picture {
 
 }
 
-/* .create {
-    position: absolute;
-    bottom: 0px;
-} */
+.cards-container {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(auto-fill, 130px);
+    gap: 26px; /*Para agregar el espacio entre los articulos */
+    place-content: center;
+}
+
+.product-card {
+    width: 130px;
+}
+
+.product {
+    width: 130px;
+    height: 130px;
+    border-radius: 10px;
+    object-fit: cover; /*Para no deformar la imagen independientemente de la medida del contenedor */
+}
+
+.product-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.product-info h1 {
+    font-size: var(--md);
+    font-weight: bold;
+    color: var(--dark);
+    margin-bottom: 4px;
+}
+
+.product-info p {
+    font-size: var(--sm);
+    font-weight: medium;
+    color: var(--very-light-pink);
+    margin-bottom: 4px;
+}
